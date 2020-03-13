@@ -1,0 +1,24 @@
+#:kivy 1.0.9
+
+<Base>:
+  aList: a
+  header: h
+
+  Label:
+    id: h
+    text: root.title_text
+    size_hint_y: 0.1
+    font_size: 50
+
+  AchievementList:
+    id: a
+    size_hint_y: 1.0
+
+<AchievementEntry>:
+  canvas.before:
+    Color:
+      rgb: root.rgb
+      #rgb: (1,0,0,1)
+    Rectangle:
+      pos: root.pos
+      size: root.size
